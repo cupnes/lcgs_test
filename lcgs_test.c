@@ -35,9 +35,15 @@ LCGsについて：
 #define LCGS_B	3
 #define LCGS_M	16
 */
+/*
 #define LCGS_A	5
 #define LCGS_B	3
 #define LCGS_M	256
+*/
+
+#define LCGS_A	5	// 5 - 1 = 4は、262144の持つ全ての素因数(2のみ)で割り切れる, 4の倍数
+#define LCGS_B	3	// 3と262144の最大公約数は1
+#define LCGS_M	262144	// = 0o1 000 000, 素因数は2のみ, 4の倍数
 
 /* X_0 */
 #define LCGS_X0	24
